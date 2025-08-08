@@ -6,6 +6,7 @@ typedef struct{
   sf::RenderWindow app;
 } Window;
 
+extern sf::RectangleShape rect;
 
 void CreateWindow(Window* window, int width, int height, std::string& title);
 void Loop(Window* window, sf::Event event);
