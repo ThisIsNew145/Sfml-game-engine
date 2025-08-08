@@ -9,7 +9,7 @@ int main (){
   sf::Event event;
 
   CreateWindow(&window, width, height, title);
-  Loop(&window, &event);
+  Loop(&window, event);
 
   return 0;
 }

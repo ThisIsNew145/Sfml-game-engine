@@ -7,7 +7,7 @@ typedef struct{
 } Window;
 
 
-void CreateWindow(Window* window, int width, int height, std::string title);
-void Loop(Window* window, sf::Event* event);
+void CreateWindow(Window* window, int width, int height, std::string& title);
+void Loop(Window* window, sf::Event event);
 void Draw(Window* window);
 void Input(Window* window);
