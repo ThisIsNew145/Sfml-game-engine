@@ -10,6 +10,8 @@ typedef struct{
 
 extern sf::Texture tex;
 extern sf::Sprite sprite;
+extern sf::Texture mapTex;
+extern sf::Sprite mapSprite;
 
 void CreateWindow(Window* window, int width, int height, std::string& title);
 void Loop(Window* window, sf::Event event);
