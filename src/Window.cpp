@@ -10,8 +10,6 @@
 
 sf::Texture tex;
 sf::Sprite sprite;
-sf::Texture mapTex;
-sf::Sprite mapSprite;
 
 void CreateWindow(Window* window, int width, int height, std::string& title){
   window->app.create(sf::VideoMode(width, height), title.c_str());
@@ -43,10 +41,7 @@ void Input(Window *window){
 }
 
 void Draw(Window *window){
-  if (!mapTex.loadFromFile("assets/grid.png")) { printf("The texture could not load "); exit(0); }
   if (!tex.loadFromFile("assets/Unnamed pokie ball.png")) { printf("The texture could not load"); exit(0);}
-  mapSprite.setTexture(mapTex);
   sprite.setTexture(tex);
   window->app.draw(sprite);
-  window->app.draw(mapSprite);
 }
